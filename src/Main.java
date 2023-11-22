@@ -3,14 +3,14 @@ public class Main {
     public static void main(String[] args) {
         System.out.println("Вы получили бонусы:");
 
-        int x = 15; //цена билета
-        int z = 20; // рублей для получения 1 бонусной мили
-        int y = Math.round(x / 20);
+        int ticket_price = 1700; //цена билета
+        int bonus_rubles = 20; // рублей для получения 1 бонусной мили
+        int solution = Math.round(ticket_price / 20);
 
-        if (x > 20) {
-            System.out.println(y);
-        } else if (x == 20) {
-            System.out.println(y);
+        if (ticket_price > 20) {
+            System.out.println(solution);
+        } else if (ticket_price == 20) {
+            System.out.println(solution);
         } else {
             System.out.println("0");
         }
